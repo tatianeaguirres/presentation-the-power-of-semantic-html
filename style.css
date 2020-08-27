@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body { 
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: lightskyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav,
+main {
+  padding: 0 10%;
+}
+
+header a {
+  padding: 0 5%;
+  margin: 0 5%;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li a {
+  padding: 30px;
+}
+
+header a:hover,
+header a:focus {
+  background-color: rgba(0,0,0,0.2);
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.article {
+  margin: 70px 0;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  outline: 2px solid blue;
+}
+
+blockquote {
+  width: 100%;
+  padding: 10px;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Stylized current page */
+nav [aria-current=page] {
+  font-weight: bold;
+  background-color: steelblue;
+	border-bottom: 2px solid black;
+}
+
+/* Italicize foreign phrases */
+span[lang] {
+  font-style: italic;
+}
+
+/* Stylized Horizontal Rule */
+hr {
+  border: 0;
+  border-bottom: 10px dotted lightskyblue;
+  width: 100%;
+}
+
+/* Responsive images */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Invisible Content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
